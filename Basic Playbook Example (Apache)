@@ -1,7 +1,0 @@
----
-- name: Install and configure Apache web server
-  hosts: webservers
-  become: true
-
-  roles:
-    - apache
