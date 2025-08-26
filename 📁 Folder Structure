@@ -1,0 +1,32 @@
+ansible-portfolio/
+├── inventories/
+│   ├── production/
+│   │   ├── hosts
+│   │   └── group_vars/
+│   └── staging/
+│       ├── hosts
+│       └── group_vars/
+├── playbooks/
+│   ├── webserver.yml
+│   ├── docker.yml
+│   └── site.yml
+├── roles/
+│   ├── common/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   └── README.md
+│   ├── webserver/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   └── templates/
+│   │       └── index.html.j2
+│   ├── docker/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   └── templates/
+│   │       └── docker-install.sh.j2
+├── group_vars/
+│   └── all.yml
+├── ansible.cfg
+├── requirements.yml
+└── README.md
